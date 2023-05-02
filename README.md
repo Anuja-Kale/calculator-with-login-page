@@ -1,7 +1,7 @@
 **User Registration and Calculator**<br>
 This is a simple web application that allows users to register using their email, user name and password, and then perform basic mathematical operations using a calculator.<br><br><br>
 
-**Prerequisites**<br><br>
+**Prerequisites**<br>
 To use this application, you need a modern web browser such as Google Chrome, Mozilla Firefox or Microsoft Edge. You also need to have JavaScript enabled in your browser.<br>
 
 **Getting started**<br>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="login.js"></script>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		.login-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.login-form {
+			width: 350px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+			padding: 40px;
+			text-align: center;
+		}
+		.login-form h2 {
+			margin-top: 0;
+		}
+		.form-input {
+			position: relative;
+			margin-bottom: 25px;
+		}
+		.form-input input {
+			width: 100%;
+			padding: 10px 0;
+			font-size: 16px;
+			border: none;
+			border-bottom: 1px solid #ccc;
+			outline: none;
+			background: transparent;
+		}
+		.form-input label {
+			position: absolute;
+			top: 10px;
+			left: 0;
+			font-size: 16px;
+			color: #999;
+			transition: all 0.3s ease;
+		}
+		.form-input input:focus + label,
+		.form-input input:not(:placeholder-shown) + label {
+			top: -18px;
+			font-size: 12px;
+			color: #4CAF50;
+		}
+		#error-msg {
+			color: red;
+		}
+		.submit-btn {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 20px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		.submit-btn:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="login-box">
+		<div class="login-form">
+			<h2>Login</h2>
+			<form id="login-form">
+				<div class="form-input">
+					<input type="text" name="username" required>
+					<label>Username</label>
+				</div>
+				<div class="form-input">
+					<input type="password" name="password" required>
+					<label>Password</label>
+				</div>
+				<div class="form-input">
+					<input type="email" name="email" required>
+					<label>Email</label>
+				</div>
+				<p id="error-msg"></p>
+				<input type="submit" value="Login" class="submit-btn">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
